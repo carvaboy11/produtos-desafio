@@ -1,9 +1,14 @@
 package com.gabriel.pedidos.service;
 
-import com.gabriel.pedidos.modelo.*;
-import com.gabriel.pedidos.pagamento.*;
-import com.gabriel.pedidos.util.Logger;
 import org.springframework.stereotype.Service;
+
+import com.gabriel.pedidos.modelo.Pedido;
+import com.gabriel.pedidos.modelo.PedidoComDesconto;
+import com.gabriel.pedidos.modelo.PedidoComFrete;
+import com.gabriel.pedidos.modelo.PedidoSimples;
+import com.gabriel.pedidos.pagamento.PagamentoFactory;
+import com.gabriel.pedidos.pagamento.PagamentoStrategy;
+import com.gabriel.pedidos.util.Logger;
 
 @Service
 public class PedidoService {
